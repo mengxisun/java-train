@@ -27,7 +27,7 @@ public class Homework {
 
         }
 
-        arrayString = "{"+arrayString+"}"
+        arrayString = "{"+arrayString+"}";
 
 
         return arrayString;
@@ -47,7 +47,7 @@ public class Homework {
 
         }
 
-        arrayString = "{"+arrayString+"}"
+        arrayString = "{"+arrayString+"}";
 
         return arrayString;
     }
