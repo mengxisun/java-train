@@ -146,14 +146,6 @@ public class Homework {
         int[] copiedArray = null;
 
         // write your code here.
-
-        return copiedArray;
-    }
-
-    public static int[] copyArray(int[] array, int length) {
-        int[] copiedArray = null;
-
-        // write your code here.
         copiedArray = new int[array.length];
         for(int i = 0; i < array.length; i++)
         {
@@ -162,7 +154,6 @@ public class Homework {
 
         return copiedArray;
     }
-
 
     public static int[] copyArray(int[] array, int length) {
         int[] copiedArray = null;
