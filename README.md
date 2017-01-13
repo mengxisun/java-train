@@ -69,5 +69,8 @@
 * 代码版本管理
     - [GitHub](https://github.com)
     - [SourceTree](https://www.sourcetreeapp.com)
+    - For Windows XP users
+     * [Git for Windows](https://github.com/git-for-windows/git/releases/download/v2.10.0.windows.1/Git-2.10.0-32-bit.exe)
+     * [TortoiseGit](https://download.tortoisegit.org/tgit/1.8.16.0/TortoiseGit-1.8.16.0-32bit.msi)
 * 项目部署
     - [Heroku](https://www.heroku.com)
