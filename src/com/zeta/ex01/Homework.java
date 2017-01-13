@@ -17,6 +17,18 @@ public class Homework {
         String arrayString = "";
 
         // write your code here.
+        for(int i = 0; i < array.length; i++)
+        {
+            if(arrayString.length > 0)
+            {
+                arrayString += ",";
+            }
+            arrayString += array[i];
+
+        }
+
+        arrayString = "{"+arrayString+"}"
+
 
         return arrayString;
     }
@@ -25,6 +37,17 @@ public class Homework {
         String arrayString = "";
 
         // write your code here.
+        for(int i = 0; i < array.length; i++)
+        {
+            if(arrayString.length > 0)
+            {
+                arrayString += ",";
+            }
+            arrayString += array[i];
+
+        }
+
+        arrayString = "{"+arrayString+"}"
 
         return arrayString;
     }
@@ -37,8 +60,17 @@ public class Homework {
      */
     public static boolean containsInArray(int[] array, int key) {
         boolean exists = false;
-
+            if (key = array )
         // write your code here.
+                for(int i = 0; i < array.length; i++)
+                {
+                    int indexValue= array[i];
+                    if(indexValue == key)
+                    {
+                        exists = true;
+                        break;
+                    }
+                }
 
         return exists;
     }
@@ -54,6 +86,15 @@ public class Homework {
         int index = -1;
 
         // write your code here.
+        for(int i = 0; i < array.length; i++)
+        {
+            int indexValue = array[i];
+            if(indexValue == key)
+            {
+                index = i;
+                break;
+            }
+        }
 
         return index;
     }
@@ -68,6 +109,27 @@ public class Homework {
         boolean equals = false;
 
         // write your code here.
+        equals = true;
+        if(array1.length == array2.length)
+        {
+            for(int i = 0; i < array1.length; i++)
+            {
+                indexValue1 = array1[i];
+                indexValue2 = array2[i];
+                if(indexValue1 == indexValue2)
+                {
+                }
+                else
+                {
+                    equals = false;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            equals = false;
+        }
 
         return equals;
     }
@@ -92,6 +154,39 @@ public class Homework {
         int[] copiedArray = null;
 
         // write your code here.
+        copiedArray = new int[array.length];
+        for(int i = 0; i < array.length; i++)
+        {
+            copiedArray[i] = array[i];
+        }
+
+        return copiedArray;
+    }
+
+
+    public static int[] copyArray(int[] array, int length) {
+        int[] copiedArray = null;
+
+
+        // write your code here.
+        if(length <= 0)
+        {
+            return null;
+        }
+        if(length <= array.length)
+        {
+            copiedArray = new int[length];
+        }
+        else
+        {
+            copiedArray = new int[array.length];
+        }
+
+
+        for(int i = 0;  i < array.length && i < length; i++)
+        {
+            copiedArray[i] = array[i];
+        }
 
         return copiedArray;
     }
